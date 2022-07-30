@@ -21,21 +21,10 @@ body {
   grid-template-columns: 60% 40%;
   grid-template-rows: 100%;
   grid-template-areas:
-  "heroText heroImage"
+    "heroText heroImage"
   ;
 }
-.footerGridArea {
-  margin: 0px auto;
-  padding: 50px 35px;
-  min-height: 500px;
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
-  grid-template-areas:
-    "contactForm teaCup"
-  ;
-}
+
 
 #heroText {
   margin: 0 auto;
@@ -80,6 +69,26 @@ body {
 }
 
 
+#interests {
+  margin-top: 50px;
+}
+
+#interestsCarousel .carousel-item {
+  height: 300px;
+}
+
+#interestsCarousel .carousel-item:nth-child(1) {
+  background-color: gray;
+}
+
+#interestsCarousel .carousel-item:nth-child(2) {
+  background-color: lightgray
+}
+
+#interestsCarousel .carousel-item:nth-child(3) {
+  background-color: lightblue
+}
+
 /* Category Grid CSS */
 
 .subHeading {
@@ -99,7 +108,7 @@ body {
   "case study 3"
   ;
 }
-#caseStudies, #skills {
+#skills {
   max-width: 1000px;
   margin: 50px auto;
   display: grid;
@@ -109,10 +118,13 @@ body {
 .containerWithHeader {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
       "header"
       "body";
+}
+#caseStudies {
+  margin-top: 50px;
 }
 #caseStudy1 {
   background-image: url("../images/bookcases@2x.png");
@@ -136,7 +148,7 @@ body {
 
 .heading {
   background-color: rgba(0,0,0,0.7);
-  padding: 15px;
+  padding-top: 65%;
   height: 25px;
   color: white;
   font-size: 24px;
@@ -189,8 +201,7 @@ body {
   text-decoration: none;
 }
 #footer {
-  max-width: 1000px;
-  margin: auto;
+  margin-top: 50px
 }
 #footer form {
   display: flex;
@@ -212,6 +223,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+#teaCup {
+  background-image: url("../images/teaCups.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  min-height: 400px
 }
 .icons {
   display: flex;
@@ -235,9 +256,7 @@ body {
 
 h1 {
   font-size: 60px;
-  margin: 0px auto;
   color: #5D768C;
-  max-width: 1000px;
 }
 
 h2 {
